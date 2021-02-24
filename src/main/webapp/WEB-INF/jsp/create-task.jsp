@@ -12,28 +12,28 @@
     <div>
         <form:form id="form" >
             <h1 >Create Task:</h1>
-            <label for="name" >Name:</label>
+                <label for="name" >Name:</label>
                 <input type="text" id="name" name="name" placeholder="Enter a task name" class="form-control">
             <br>
             <br>
-            <label for="startDate" >Start Date:</label>
+                <label for="startDate" >Start Date:</label>
                 <input type="date" id="startDate" name="startDate" class="form-control">
             <br>
             <br>
-            <label for="endDate" >End Date:</label>
+                <label for="endDate" >End Date:</label>
                 <input type="date" id="endDate" name="endDate" class="form-control">
             <br>
             <br>
-            <label for="description" >Description:</label>
-            <textarea id="description" name="description" rows="5" cols="33" placeholder="Enter description here..." class="form-control"></textarea>
+                <label for="description" >Description:</label>
+                <textarea id="description" name="description" rows="5" cols="33" placeholder="Enter description here..." class="form-control"></textarea>
             <br>
             <br>
-            <label for="severity" >Severity:</label>
-                <select name="severity" id="severity" class="form-control">
-                    <option value="high">High</option>
-                    <option value="medium">Medium</option>
-                    <option value="low">Low</option>
-                </select>
+                <label for="severity" >Severity:</label>
+                    <select name="severity" id="severity" class="form-control">
+                        <option value="high">High</option>
+                        <option value="medium">Medium</option>
+                        <option value="low">Low</option>
+                    </select>
             <br>
             <br>
                 <input type="submit" value="Submit">

@@ -12,28 +12,28 @@
 <body>
 <h1>Update Task</h1>
 <form:form method="post">
-    <label for="name">Task Name:</label>
-    <input type="text" id="name" name="name" value="${task.name}">
+        <label for="name">Task Name:</label>
+        <input type="text" id="name" name="name" value="${task.name}">
     <br>
     <br>
-    <label for="startdate">Start Date:</label>
-    <input type="date" id="startdate" name="startDate" value=<fmt:formatDate pattern = "yyyy-MM-dd" value = "${task.startDate}" />>
+        <label for="startdate">Start Date:</label>
+        <input type="date" id="startdate" name="startDate" value=<fmt:formatDate pattern = "yyyy-MM-dd" value = "${task.startDate}" />>
     <br>
     <br>
-    <label for="enddate">End Date:</label>
-    <input type="date" id="enddate" name="endDate" value=<fmt:formatDate pattern = "yyyy-MM-dd" value = "${task.endDate}" />>
+        <label for="enddate">End Date:</label>
+        <input type="date" id="enddate" name="endDate" value=<fmt:formatDate pattern = "yyyy-MM-dd" value = "${task.endDate}" />>
     <br>
     <br>
-    <label for="description">Description:</label>
-    <textarea id="description" name="description" rows="4" cols="50" >${task.description}</textarea>
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" cols="50" >${task.description}</textarea>
     <br>
     <br>
-    <label for="severity">Severity:</label>
-    <select name="severity" id="severity">
-        <option value="high" <c:if test="${task.severity == 'high'}">selected</c:if>>High</option>
-        <option value="medium" <c:if test="${task.severity == 'medium'}">selected</c:if>>Medium</option>
-        <option value="low" <c:if test="${task.severity == 'low'}">selected</c:if>>Low</option>
-    </select>
+        <label for="severity">Severity:</label>
+        <select name="severity" id="severity">
+            <option value="high" <c:if test="${task.severity == 'high'}">selected</c:if>>High</option>
+            <option value="medium" <c:if test="${task.severity == 'medium'}">selected</c:if>>Medium</option>
+            <option value="low" <c:if test="${task.severity == 'low'}">selected</c:if>>Low</option>
+        </select>
     <br>
     <br>
         <input type="submit" value="Submit">

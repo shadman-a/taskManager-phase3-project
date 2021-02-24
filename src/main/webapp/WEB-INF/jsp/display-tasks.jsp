@@ -23,7 +23,6 @@
         <th>End Date</th>
         <th>Severity</th>
         <th>Owner</th>
-
     </tr>
     <c:forEach items="${tasks}" var="task">
         <tr>
@@ -41,7 +40,6 @@
     </c:forEach>
 </table>
 <br>
-
 <form:form action="logout" method="post">
     <input type="submit" value="Sign Out" />
 </form:form>
